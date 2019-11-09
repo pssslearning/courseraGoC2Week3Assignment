@@ -92,6 +92,8 @@ func getUserRequest() (string, string) {
 			continue
 		}
 
+		// Nota: usando strings.Fields() no habría sido necesario este loop
+		// ver AL/animals.go
 		for _, y := range splitted {
 			if len(y) > 0 {
 				resulting[cursor] = y
